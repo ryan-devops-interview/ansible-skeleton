@@ -1,0 +1,17 @@
+---
+- name: Configure a MariaDB database.
+  hosts: db01 
+  tasks:
+    - name: Set hostname of the server.
+      become: True
+      hostname:
+        name: db01
+
+    - name: Install MariaDB.
+      package:
+        name:
+          - mariadb-server
+          - python3-PyMySQL
+
+#    - name: Provision MariaDB accounts for some users.
+#    Hmm, how do I do this?

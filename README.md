@@ -1,3 +1,3 @@
-# ansible-skeleton
+# MariaDB deployment
 
 Not much to see here.
